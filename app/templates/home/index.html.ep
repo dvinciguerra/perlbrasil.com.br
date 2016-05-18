@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="perlbr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="http://htmlcoder.me/preview/the_project/v.1.2/template/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="http://htmlcoder.me/preview/the_project/v.1.2/template/plugins/owl-carousel/owl.transitions.css">
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -94,6 +100,24 @@
               Também gostamos muito de tomar uma cerveja e jogar conversa fora. Tudo 
               que é engrandecedor e agrega valor nos interessa! 
             </p>
+            <br>
+            
+            <h3>Quem usa Perl no Brasil?</h3>
+            <p class="text-faded">
+              Algumas empresa brasileiras quem trabalham ou oferecem treinamento em <a href'="http://perl.org">Perl</a>
+            </p>
+
+            <div class="owl-carousel companies">
+							<div class="company">
+								<a href="#" data-toggle="tooltip" data-placement="bottom" title="Bivee"><img src="/img/companies/bivee.png" alt="Bivee"></a>
+							</div>
+							<div class="company">
+								<a href="#"><img src="/img/companies/your-company.png" alt=""></a>
+							</div>
+            </div>
+            <br>
+            <br>
+            <br>
             <a href="#contact" class="btn btn-default btn-xl page-scroll">Venha Conversar!</a>
           </div>
         </div>
@@ -263,6 +287,8 @@
         </div>
       </div>
     </section>
+    <!-- Angular -->
+    <script src="https://rawgit.com/angular/bower-angular/master/angular.min.js"></script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
@@ -273,6 +299,21 @@
     <script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+
+    <script src="http://htmlcoder.me/preview/the_project/v.1.2/template/plugins/owl-carousel/owl.carousel.js"></script>
+
+    <script>
+      $(function(){
+        $(".owl-carousel.companies").owlCarousel({
+          items: 6,
+          autoPlay: true,
+          pagination: false,
+          itemsDesktopSmall: [992,4],
+          itemsTablet: [768,4],
+          itemsMobile: [479,3]
+        });
+      });
+    </script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
