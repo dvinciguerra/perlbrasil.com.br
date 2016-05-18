@@ -112,7 +112,7 @@
 								<a href="#" data-toggle="tooltip" data-placement="bottom" title="Bivee"><img src="/img/companies/bivee.png" alt="Bivee"></a>
 							</div>
 							<div class="company">
-								<a href="#"><img src="/img/companies/your-company.png" alt=""></a>
+								<a href="javascript:void(0)" data-toggle="modal" data-target="#modal-company"><img src="/img/companies/your-company.png" alt=""></a>
 							</div>
             </div>
             <br>
@@ -123,145 +123,8 @@
         </div>
       </div>
     </section>
-    <section id="services" class="hide">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">At Your Service</h2>
-            <hr class="primary">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-              <h3>Sturdy Templates</h3>
-              <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
-              <h3>Ready to Ship</h3>
-              <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-              <h3>Up to Date</h3>
-              <p class="text-muted">We update dependencies to keep things fresh.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box">
-              <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-              <h3>Made with Love</h3>
-              <p class="text-muted">You have to make your websites with love these days!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hide no-padding" id="portfolio">
-      <div class="container-fluid">
-        <div class="row no-gutter">
-          <div class="col-lg-4 col-sm-6">
-            <a href="#" class="portfolio-box">
-              <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a href="#" class="portfolio-box">
-              <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a href="#" class="portfolio-box">
-              <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a href="#" class="portfolio-box">
-              <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a href="#" class="portfolio-box">
-              <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a href="#" class="portfolio-box">
-              <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section style="color: rgb(225, 225, 225); background-color: rgb(31, 43, 55);" id="contact">
+
+    <section style="" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -287,6 +150,30 @@
         </div>
       </div>
     </section>
+
+    <!-- add-company modal -->
+    <div class="modal fade" id="modal-company" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Perl Brasil - Adicionar Empresa</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Gostaria de adicionar o logo da sua empresa no site? 
+              Então envie um email para <a href="mailto:dvinci@cpan.org">dvinci@cpan.org</a> com o <code>nome da sua empresa</code>, <code>descrição</code> de como o Perl é utilizado e a <code>imagem do logo</code> em anexo.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.modal -->
+
+
+
     <!-- Angular -->
     <script src="https://rawgit.com/angular/bower-angular/master/angular.min.js"></script>
     <!-- jQuery -->
@@ -302,6 +189,7 @@
 
     <script src="http://htmlcoder.me/preview/the_project/v.1.2/template/plugins/owl-carousel/owl.carousel.js"></script>
 
+    <script src="js/app.js"></script>
     <script>
       $(function(){
         $(".owl-carousel.companies").owlCarousel({
